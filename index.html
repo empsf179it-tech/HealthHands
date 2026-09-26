@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="theme-color" content="#102a43">
+<title>HealthHands — Premium Care</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23246bfd' /%3E%3Cstop offset='100%25' stop-color='%2319b8c8' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='%23102a43'/%3E%3Cpath d='M32 18 C22 18 16 25 16 34 C16 45 32 52 32 52 C32 52 48 45 48 34 C48 25 42 18 32 18 Z' fill='url(%23g)' opacity='0.25'/%3E%3Cpath d='M32 24 L32 44 M22 34 L42 34' stroke='url(%23g)' stroke-width='7' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="topbar">
+<div class="container nav">
+<div class="logo" onclick="go('home')"><svg class="logoMark" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="logoG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#246bfd" /><stop offset="100%" stop-color="#19b8c8" /></linearGradient></defs><rect width="64" height="64" rx="16" fill="#102a43"/><path d="M32 18 C22 18 16 25 16 34 C16 45 32 52 32 52 C32 52 48 45 48 34 C48 25 42 18 32 18 Z" fill="url(#logoG)" opacity="0.25"/><path d="M32 24 L32 44 M22 34 L42 34" stroke="url(#logoG)" stroke-width="7" stroke-linecap="round"/></svg>HealthHands</div>
+<nav class="navlinks">
+<button class="active" onclick="go('home')">Home</button><button class="" onclick="go('about')">About</button><button class="" onclick="go('services')">Services</button><button class="" onclick="go('caregivers')">Caregivers</button><button class="" onclick="go('process')">Care Process</button><button class="" onclick="go('testimonials')">Testimonials</button><button class="" onclick="go('team')">Team</button><button class="" onclick="go('contact')">Contact</button>
+</nav>
+<div class="navActions">
+<button class="hamb" onclick="document.querySelector('.mobileNav').classList.toggle('hide')">☰</button>
+<button class="btn blue desktopContact" onclick="go('login')">Login</button>
+</div>
+</div>
+<div class="container mobileNav hide">
+<button class="active" onclick="go('home')">Home</button><button onclick="go('about')">About</button><button onclick="go('services')">Services</button><button onclick="go('caregivers')">Caregivers</button><button onclick="go('process')">Care Process</button><button onclick="go('testimonials')">Testimonials</button><button onclick="go('team')">Team</button><button onclick="go('contact')">Contact</button>
+<button class="btn blue" style="margin-top:10px" onclick="go('login')">Login</button>
+</div>
+</header>
+<main>
+<section class="hero"><div class="container heroGrid">
+<div>
+<span class="kicker">Caregiver & Nursing Agency</span>
+<h1>Trusted care.<br><span>Better everyday.</span></h1>
+<p class="lead">Thoughtful home-care, nursing and companionship support built around individual routines, family confidence and respectful care.</p>
+<div class="actions"><button class="btn blue" onclick="go('contact')">Find care</button><button class="btn light" onclick="go('services')">Explore services</button></div>
+</div>
+<div class="heroImage"><img class="heroPhoto" loading="eager" decoding="async" referrerpolicy="no-referrer" src="https://images.pexels.com/photos/7345465/pexels-photo-7345465.jpeg?auto=compress&cs=tinysrgb&w=2400&q=88" alt="Healthcare caregiver"><div class="floating"><span class="pulseDot"></span><b>Personalized care plans</b></div></div>
+</div></section>
+<section class="section"><div class="container"><div class="sectionHead"><span class="kicker">01 · Care solutions</span><h2>Support that fits real life</h2><p>Practical care services designed around comfort, independence and consistent support.</p></div><div class="grid3">
+<article class="card"><div class="cardImage"><img loading="lazy" decoding="async" referrerpolicy="no-referrer" src="https://images.pexels.com/photos/29372724/pexels-photo-29372724.jpeg?auto=compress&cs=tinysrgb&w=2400&q=88" alt="Daily living support"></div><span class="tag">Personal care</span><h3>Daily living support</h3><p class="muted">Respectful assistance with routines, mobility, hygiene and comfort.</p><div class="actions"><button class="btn light" onclick="go('contact')">Learn more</button></div></article>
+<article class="card"><div class="cardImage"><img loading="lazy" decoding="async" referrerpolicy="no-referrer" src="https://images.pexels.com/photos/6129236/pexels-photo-6129236.jpeg?auto=compress&cs=tinysrgb&w=2400&q=88" alt="Professional support"></div><span class="tag">Nursing</span><h3>Professional support</h3><p class="muted">Structured home nursing support for appropriate care requirements.</p><div class="actions"><button class="btn light" onclick="go('contact')">Learn more</button></div></article>
+<article class="card"><div class="cardImage"><img loading="lazy" decoding="async" referrerpolicy="no-referrer" src="https://images.pexels.com/photos/7551649/pexels-photo-7551649.jpeg?auto=compress&cs=tinysrgb&w=2400&q=88" alt="Home recovery"></div><span class="tag">Recovery</span><h3>Home recovery</h3><p class="muted">Practical support that makes recovery routines easier to follow.</p><div class="actions"><button class="btn light" onclick="go('contact')">Learn more</button></div></article>
+</div></div></section>
+<section class="section"><div class="container"><div class="sectionHead"><span class="kicker">02 · Care journey</span><h2>Simple process. Clear communication.</h2><p>A focused care journey helps families understand what happens before, during and after support begins.</p></div><div class="process">
+<div class="card"><div class="stepNum">01</div><h3>Understand</h3><p class="muted">Understand routines, preferences and support requirements.</p></div><div class="card"><div class="stepNum">02</div><h3>Plan</h3><p class="muted">Create practical priorities and responsibilities.</p></div><div class="card"><div class="stepNum">03</div><h3>Match</h3><p class="muted">Connect needs with suitable caregiver support.</p></div><div class="card"><div class="stepNum">04</div><h3>Review</h3><p class="muted">Review progress and adapt when needs change.</p></div>
+</div></div></section>
+<section class="section"><div class="container split"><img class="splitImg" loading="lazy" decoding="async" referrerpolicy="no-referrer" src="https://images.pexels.com/photos/7446775/pexels-photo-7446775.jpeg?auto=compress&cs=tinysrgb&w=2400&q=88" alt="Family support"><div><div class="sectionHead"><span class="kicker">03 · Family confidence</span><h2>Care that keeps families connected</h2><p>Families should have a clear understanding of the care plan, responsibilities and communication process.</p></div><div class="featureList"><div class="feature"><b class="tick">✓</b><span>Clear daily routines and responsibilities</span></div><div class="feature"><b class="tick">✓</b><span>Simple communication with the care team</span></div><div class="feature"><b class="tick">✓</b><span>Flexible support as circumstances change</span></div></div><button class="btn primary" onclick="go('about')">Our approach</button></div></div></section>
+<section class="section"><div class="container"><div class="sectionHead"><span class="kicker">04 · Care intelligence</span><h2>Visual care progress</h2><p>Illustrative status views for a modern healthcare website.</p></div><div class="grid2">
+<div class="card"><h3>Weekly care completion</h3><p class="muted">Illustrative template data</p><div class="barChart"><div class="bar" style="height:58%"></div><div class="bar" style="height:71%"></div><div class="bar" style="height:68%"></div><div class="bar" style="height:84%"></div><div class="bar" style="height:79%"></div><div class="bar" style="height:92%"></div><div class="bar" style="height:88%"></div></div><div class="barLabels"><span>M</span><span>T</span><span>W</span><span>T</span><span>F</span><span>S</span><span>S</span></div></div>
+<div class="card"><h3>Care plan status</h3><p class="muted">Illustrative indicators</p><div class="featureList"><div><b>Daily routine · 92%</b><div style="height:8px;background:#e8edf3;border-radius:99px;margin-top:6px"><i style="display:block;width:92%;height:100%;background:#246bfd;border-radius:99px"></i></div></div><div><b>Family updates · 96%</b><div style="height:8px;background:#e8edf3;border-radius:99px;margin-top:6px"><i style="display:block;width:96%;height:100%;background:#19b8c8;border-radius:99px"></i></div></div><div><b>Review cycle · 86%</b><div style="height:8px;background:#e8edf3;border-radius:99px;margin-top:6px"><i style="display:block;width:86%;height:100%;background:#102a43;border-radius:99px"></i></div></div></div></div>
+</div></div></section>
+<section class="section"><div class="container"><div class="sectionHead"><span class="kicker">05 · Care team</span><h2>People behind the support</h2><p>Professional roles working together to make home care more organized and personal.</p></div><div class="grid3">
+<article class="card"><div class="cardImage"><img loading="lazy" decoding="async" referrerpolicy="no-referrer" src="https://images.pexels.com/photos/6129159/pexels-photo-6129159.jpeg?auto=compress&cs=tinysrgb&w=2400&q=88" alt="Connected care team"></div><span class="tag">Coordination</span><h3>Connected care team</h3><p class="muted">Schedules, communication and care-plan reviews working together.</p><div class="actions"><button class="btn light" onclick="go('contact')">Learn more</button></div></article>
+<article class="card"><div class="cardImage"><img loading="lazy" decoding="async" referrerpolicy="no-referrer" src="https://images.pexels.com/photos/8460225/pexels-photo-8460225.jpeg?auto=compress&cs=tinysrgb&w=2400&q=88" alt="Clinical support"></div><span class="tag">Nursing</span><h3>Clinical support</h3><p class="muted">Professional nursing support for appropriate home-care requirements.</p><div class="actions"><button class="btn light" onclick="go('contact')">Learn more</button></div></article>
+<article class="card"><div class="cardImage"><img loading="lazy" decoding="async" referrerpolicy="no-referrer" src="./image/Everyday support.png" alt="Everyday support"></div><span class="tag">Caregiving</span><h3>Everyday support</h3><p class="muted">Companionship, routines and practical daily assistance.</p><div class="actions"><button class="btn light" onclick="go('contact')">Learn more</button></div></article>
+</div></div></section>
+<section class="section"><div class="container"><div class="sectionHead"><span class="kicker">06 · Family experience</span><h2>Designed around trust</h2><p>A refined space for verified family experiences and service stories.</p></div><div class="grid3">
+<article class="card"><div class="cardImage"><img loading="lazy" decoding="async" referrerpolicy="no-referrer" src="https://images.pexels.com/photos/8413336/pexels-photo-8413336.jpeg?auto=compress&cs=tinysrgb&w=2400&q=88" alt="Clear communication"></div><span class="tag">Experience</span><h3>Clear communication</h3><p class="muted">A clean care process helps families understand the support provided.</p><div class="actions"><button class="btn light" onclick="go('contact')">Learn more</button></div></article>
+<article class="card"><div class="cardImage"><img loading="lazy" decoding="async" referrerpolicy="no-referrer" src="https://images.pexels.com/photos/6148877/pexels-photo-6148877.jpeg?auto=compress&cs=tinysrgb&w=2400&q=88" alt="Respectful routines"></div><span class="tag">Daily support</span><h3>Respectful routines</h3><p class="muted">Care should support independence while respecting preferences.</p><div class="actions"><button class="btn light" onclick="go('contact')">Learn more</button></div></article>
+<article class="card"><div class="cardImage"><img loading="lazy" decoding="async" referrerpolicy="no-referrer" src="./image/Human connection.png" alt="Human connection"></div><span class="tag">Relationship</span><h3>Human connection</h3><p class="muted">Professional care combines attention, patience and dignity.</p><div class="actions"><button class="btn light" onclick="go('contact')">Learn more</button></div></article>
+</div></div></section>
+</main><footer>
+<div class="container footerGrid">
+<div>
+<div class="logo"><svg class="logoMark" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="logoG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#246bfd" /><stop offset="100%" stop-color="#19b8c8" /></linearGradient></defs><rect width="64" height="64" rx="16" fill="#102a43"/><path d="M32 18 C22 18 16 25 16 34 C16 45 32 52 32 52 C32 52 48 45 48 34 C48 25 42 18 32 18 Z" fill="url(#logoG)" opacity="0.25"/><path d="M32 24 L32 44 M22 34 L42 34" stroke="url(#logoG)" stroke-width="7" stroke-linecap="round"/></svg>HealthHands</div>
+<p>Thoughtful home care and nursing support built around dignity, consistency and modern family communication.</p>
+<div class="socials"><a class="social" href="#"><svg viewBox="0 0 24 24"><path fill="#E4405F" d="M7.4 2h9.2A5.4 5.4 0 0 1 22 7.4v9.2a5.4 5.4 0 0 1-5.4 5.4H7.4A5.4 5.4 0 0 1 2 16.6V7.4A5.4 5.4 0 0 1 7.4 2Zm0 2A3.4 3.4 0 0 0 4 7.4v9.2A3.4 3.4 0 0 0 7.4 20h9.2a3.4 3.4 0 0 0 3.4-3.4V7.4A3.4 3.4 0 0 0 16.6 4H7.4Zm9.7 1.4a1.3 1.3 0 1 1 0 2.6 1.3 1.3 0 0 1 0-2.6ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0-0-6Z"/></svg></a><a class="social" href="#"><svg viewBox="0 0 24 24"><path fill="#1877F2" d="M13.5 22v-9h3l.5-3.5h-3.5V7.2c0-1 .28-1.7 1.74-1.7H17V2.37C16.62 2.32 15.72 2.25 14.67 2.25c-2.62 0-4.42 1.6-4.42 4.54v2.71H7.28V13h2.97v9h3.25Z"/></svg></a><a class="social" href="#"><svg viewBox="0 0 24 24"><path fill="#111" d="M18.9 2H22l-6.77 7.74L23.2 22h-6.25l-4.9-6.41L6.45 22H3.35l7.25-8.29L2.8 2h6.4l4.43 5.86L18.9 2Zm-1.1 17.9h1.73L8.28 4H6.42L17.8 19.9Z"/></svg></a><a class="social" href="#"><svg viewBox="0 0 24 24"><path fill="#0A66C2" d="M5.2 3.5A2.2 2.2 0 1 1 5.2 7.9a2.2 2.2 0 0 1 0-4.4ZM3.3 9.5h3.8V21H3.3V9.5Zm6.2 0h3.65v1.57h.05c.51-.96 1.75-1.97 3.6-1.97 3.85 0 4.56 2.53 4.56 5.82V21h-3.8v-5.39c0-1.29-.02-2.95-1.8-2.95-1.8 0-2.08 1.4-2.08 2.85V21H9.5V9.5Z"/></svg></a></div>
+</div>
+<div><h3>Explore</h3><div class="footerLinks"><a onclick="go('services')">Services</a><a onclick="go('caregivers')">Caregivers</a><a onclick="go('process')">Care Process</a><a onclick="go('testimonials')">Testimonials</a></div></div>
+<div><h3>Company</h3><div class="footerLinks"><a onclick="go('about')">About</a><a onclick="go('team')">Team</a><a onclick="go('contact')">Contact</a><a onclick="go('contact')">Support</a></div></div>
+</div>
+<div class="container copyright">© 2026 HealthHands · Premium care website concept</div>
+</footer>
+<button class="toTop" id="topBtn" onclick="window.scrollTo({top:0,behavior:'smooth'}); return false;">↑</button>
+<script src="js/script.js"></script>
+</body>
+</html>

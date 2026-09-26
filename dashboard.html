@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="theme-color" content="#102a43">
+<title>HealthHands — Dashboard</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23246bfd' /%3E%3Cstop offset='100%25' stop-color='%2319b8c8' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='%23102a43'/%3E%3Cpath d='M32 18 C22 18 16 25 16 34 C16 45 32 52 32 52 C32 52 48 45 48 34 C48 25 42 18 32 18 Z' fill='url(%23g)' opacity='0.25'/%3E%3Cpath d='M32 24 L32 44 M22 34 L42 34' stroke='url(%23g)' stroke-width='7' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<main class="dashboard"><div class="dashWrap">
+<div class="dashHeader"><div class="logo"><svg class="logoMark" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="logoG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#246bfd" /><stop offset="100%" stop-color="#19b8c8" /></linearGradient></defs><rect width="64" height="64" rx="16" fill="#102a43"/><path d="M32 18 C22 18 16 25 16 34 C16 45 32 52 32 52 C32 52 48 45 48 34 C48 25 42 18 32 18 Z" fill="url(#logoG)" opacity="0.25"/><path d="M32 24 L32 44 M22 34 L42 34" stroke="url(#logoG)" stroke-width="7" stroke-linecap="round"/></svg>HealthHands</div><button class="btn light" onclick="go('home')">Exit</button></div>
+<div class="card" style="margin-bottom:14px"><span class="kicker">PRIVATE WORKSPACE</span><h1 style="margin:10px 0;font-size:42px">Care overview</h1><p class="muted">A clean dashboard foundation for care plans, caregiver schedules and family communication.</p></div>
+<div class="dashCards"><div class="card"><div class="dashNumber">18</div><b>Active care plans</b><p class="muted">Illustrative metric</p></div><div class="card"><div class="dashNumber">94%</div><b>Routine completion</b><p class="muted">Illustrative metric</p></div><div class="card"><div class="dashNumber">07</div><b>Pending reviews</b><p class="muted">Illustrative metric</p></div></div>
+<div class="dashRows"><div class="card"><h3>Today’s care flow</h3><p class="muted">08:30 · Morning check<br>10:00 · Family update<br>14:00 · Care review<br>18:30 · Evening follow-up</p></div><div class="card"><h3>Quick actions</h3><div class="actions"><button class="btn blue" onclick="go('contact')">New enquiry</button><button class="btn light">Care plans</button></div></div></div>
+</div></main>
+<script src="js/script.js"></script>
+</body>
+</html>
